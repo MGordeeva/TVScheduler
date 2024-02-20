@@ -6,13 +6,14 @@ In order to run the application, make sure that the db exists and connection str
 
 ## Request example
 You can use swagger for convenience (/swagger/index.html), but here is an example of POST request for program creation:
-/api/channel/{channelId}/program
+_/api/channel/{channelId}/program_
+```json
 {
   "name": "Some program",
   "description": "your description",
   "startTime": "2024-02-20T10:45:18",
   "endTime": "2024-03-20T10:45:18"
 }
-
+```
 Please, pay attention that the milliseconds in dates will be trimmed for convenience. Also, end time should be later than start time. Description may be omitted.
 
